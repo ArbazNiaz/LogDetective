@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogDetective - High-Performance Log Analysis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .hero-section { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); color: white; padding: 80px 0; }
+        .feature-icon { font-size: 2.5rem; color: #0d6efd; margin-bottom: 1rem; }
+        .tech-badge { background-color: #e2e8f0; color: #334155; font-weight: 500; font-size: 0.9rem; padding: 6px 14px; border-radius: 20px; margin: 3px; display: inline-block; }
+    </style>
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fa-solid fa-shield-halved text-primary me-2"></i>LogDetective
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-flex navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#architecture">Architecture</a></li>
+                    <li class="nav-item ms-lg-3"><a class="btn btn-outline-light btn-sm px-3" href="login.html">Log In</a></li>
+                    <li class="nav-item ms-2"><a class="btn btn-primary btn-sm px-3" href="signup.html">Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">High-Performance Security Log Parser</h1>
+            <p class="lead col-lg-8 mx-auto text-light opacity-75">
+                Stream and analyze millions of raw HTTP access logs in real-time. Detect SQL injection, XSS attempts, and brute-force spikes with zero-allocation C# memory parsing.
+            </p>
+            <div class="mt-4">
+                <a href="signup.html" class="btn btn-primary btn-lg me-2">Get Started</a>
+                <a href="login.html" class="btn btn-outline-light btn-lg">Live Demo Login</a>
+            </div>
+        </div>
+    </header>
+    <section id="features" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Key Project Features</h2>
+                <p class="text-muted">Designed for high-throughput threat detection without overwhelming server RAM.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm text-center p-4">
+                        <div class="feature-icon"><i class="fa-solid fa-bolt"></i></div>
+                        <h5 class="fw-bold">Zero-Allocation Parsing</h5>
+                        <p class="text-muted small">Utilizes C# <code>ReadOnlySpan&lt;char&gt;</code> to parse text without instantiating string objects for every log entry.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm text-center p-4">
+                        <div class="feature-icon"><i class="fa-solid fa-satellite-dish"></i></div>
+                        <h5 class="fw-bold">Real-Time Telemetry</h5>
+                        <p class="text-muted small">Integrated with ASP.NET Core SignalR WebSockets to stream processing progress and anomaly alerts live.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm text-center p-4">
+                        <div class="feature-icon"><i class="fa-solid fa-user-shield"></i></div>
+                        <h5 class="fw-bold">Threat Pattern Matching</h5>
+                        <p class="text-muted small">Automated inspection for suspicious URI parameters, SQL injection vectors, and aggregated HTTP 401 login spikes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container text-center">
+            <p class="mb-1 small">&copy; 2026 LogDetective - All Rights Reserved</p>
+            <p class="mb-0 text-muted small">Submitted by BSEF24A051 </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
